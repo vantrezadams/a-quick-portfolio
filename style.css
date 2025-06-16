@@ -1,38 +1,52 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
   margin: 0;
   padding: 0;
+  background: linear-gradient(135deg, #3b82f6, #10b981, #8b5cf6, #ec4899, #facc15);
+  background-size: 500% 500%;
+  animation: gradientShift 20s ease infinite;
+  color: #fff;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 header {
-  background-color: #1f2937;
-  color: white;
-  padding: 1.5rem;
   text-align: center;
-}
-
-section {
-  max-width: 800px;
+  padding: 2rem 1rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 2rem;
   margin: 2rem auto;
-  background: white;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  max-width: 800px;
 }
 
 img.profile {
-  width: 150px;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
   border-radius: 50%;
-  display: block;
-  margin: 0 auto 1rem;
+  border: 3px solid white;
+  margin-bottom: 1rem;
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 2rem;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 1rem auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 a {
-  color: #2563eb;
-  text-decoration: none;
-}
-a:hover {
+  color: #fff;
   text-decoration: underline;
+}
+
+a:hover {
+  color: #facc15;
 }
