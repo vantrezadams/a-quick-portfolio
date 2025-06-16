@@ -5,6 +5,7 @@
   <title>Vantrez Adams | Cloud Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <body>
   <header>
     <img src="images/profile.jpg" alt="Vantrez Adams" class="profile-pic">
@@ -43,6 +44,13 @@
   </main>
 
   <footer>
+<model-viewer
+  src="assets/model.glb"
+  alt="A 3D model of my project"
+  auto-rotate
+  camera-controls
+  style="width: 100%; max-width: 600px; height: 400px; margin: auto;">
+</model-viewer>
     <p>© 2025 Vantrez Adams. Built with 💻 and ☁️</p>
   </footer>
 </body>
