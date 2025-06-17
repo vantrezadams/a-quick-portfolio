@@ -67,3 +67,26 @@ a:hover {
   background: #059669;
 }
 
+.floating-symbol {
+  position: fixed;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.25);
+  animation: floatSymbol 18s linear infinite;
+  pointer-events: none;
+  z-index: 0; /* keeps it behind content */
+}
+
+@keyframes floatSymbol {
+  0% {
+    transform: translateY(110vh) rotate(0deg);
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(-10vh) rotate(360deg);
+    opacity: 0.2;
+  }
+}
+
