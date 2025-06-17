@@ -23,7 +23,7 @@ header {
   max-width: 800px;
 }
 
-img.profile {
+img.profile-pic {
   width: 120px;
   height: 120px;
   object-fit: cover;
