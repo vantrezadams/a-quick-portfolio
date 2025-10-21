@@ -135,3 +135,35 @@ a:hover {
     opacity: 0.1;
   }
 }
+.floating-object {
+  position: fixed;
+  font-size: 2rem; /* adjust for size */
+  color: rgba(255, 255, 255, 0.08); /* subtle */
+  animation: floatComputer 20s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(1px); /* soft effect */
+}
+
+/* Animate the objects */
+@keyframes floatComputer {
+  0% {
+    transform: translateX(-10vw) translateY(100vh) rotate(0deg);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    transform: translateX(50vw) translateY(50vh) rotate(180deg);
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.25;
+  }
+  100% {
+    transform: translateX(110vw) translateY(-10vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
