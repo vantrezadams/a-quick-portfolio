@@ -111,29 +111,6 @@ a:hover {
     0 0 10px rgba(16, 185, 129, 0.7);
 }
 
-/* Floating symbols (background aesthetic) */
-.floating-symbol {
-  position: fixed;
-  font-size: 2.5rem;
-  color: rgba(255, 255, 255, 0.08);
-  animation: floatSymbol 18s linear infinite;
-  pointer-events: none;
-  z-index: 0;
-  filter: blur(1px);
-}
-
-@keyframes floatSymbol {
-  0% {
-    transform: translateY(110vh) rotate(0deg);
-    opacity: 0.1;
-  }
-  50% {
-    opacity: 0.25;
-  }
-  100% {
-    transform: translateY(-10vh) rotate(360deg);
-    opacity: 0.1;
-  }
 }
 .floating-object {
   position: fixed;
@@ -166,4 +143,5 @@ a:hover {
     opacity: 0;
   }
 }
+
 
